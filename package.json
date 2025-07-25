@@ -1,0 +1,39 @@
+{
+	"name": "fastify-type-provider-playground",
+	"private": "true",
+	"version": "1.0.0",
+	"description": "A playground for studying Fastify schema providers",
+	"engines": {
+		"node": ">=22.0.0"
+	},
+	"scripts": {
+		"build": "tsc --build",
+		"test": "vitest run",
+		"test:watch": "vitest --watch"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/Nunes-ND/fastify-type-provider-playground.git"
+	},
+	"keywords": [
+		"fastify",
+		"typescript",
+		"playground"
+	],
+	"author": "",
+	"license": "ISC",
+	"type": "commonjs",
+	"bugs": {
+		"url": "https://github.com/Nunes-ND/fastify-type-provider-playground/issues"
+	},
+	"homepage": "https://github.com/Nunes-ND/fastify-type-provider-playground#readme",
+	"devDependencies": {
+		"@biomejs/biome": "^2.1.2",
+		"@types/node": "^24.1.0",
+		"pino-pretty": "^13.0.0",
+		"tsx": "^4.20.3",
+		"typescript": "^5.8.3",
+		"vite-tsconfig-paths": "^5.1.4",
+		"vitest": "^3.2.4"
+	}
+}

@@ -1,0 +1,40 @@
+{
+  "$schema": "https://json.schemastore.org/tsconfig",
+  "_version": "22.0.0",
+  "compilerOptions": {
+    "lib": [
+      "es2024",
+      "ESNext.Array",
+      "ESNext.Collection",
+      "ESNext.Iterator"
+    ],
+    "module": "nodenext",
+    "target": "es2022",
+    "strict": true,
+    "noStrictGenericChecks": false,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "moduleResolution": "nodenext",
+    "sourceMap": false,
+    "removeComments": true,
+    "incremental": true,
+    "composite": true,
+    "baseUrl": ".",
+    "paths": {
+      "@shared/*": [
+        "modules/shared/*"
+      ],
+      "@backend/*": [
+        "modules/backend/*"
+      ]
+    }
+  },
+  "references": [
+    {
+      "path": "modules/json-schema-to-ts"
+    },
+    {
+      "path": "modules/shared"
+    }
+  ]
+}
