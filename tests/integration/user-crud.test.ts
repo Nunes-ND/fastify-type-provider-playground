@@ -1,11 +1,18 @@
-import { fastify } from 'json-schema-to-ts/src/http/server';
+import type { FastifyInstance } from 'fastify';
 import { afterAll, beforeAll, describe, expect, it } from 'vitest';
 
 describe('Generic User CRUD API - Integration Tests', () => {
-	let app: typeof fastify;
+	let app: FastifyInstance;
 
 	beforeAll(async () => {
-		app = fastify;
+		const serverModulePath = process.env.SERVER_MODULE;
+		if (!serverModulePath) {
+			throw new Error(
+				'SERVER_MODULE environment variable is not set. Please specify the server module to test.',
+			);
+		}
+		const serverModule = await import(serverModulePath);
+		app = serverModule.fastify;
 		await app.ready();
 	});
 
