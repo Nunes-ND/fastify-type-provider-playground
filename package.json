@@ -7,6 +7,7 @@
 		"node": ">=22.0.0"
 	},
 	"scripts": {
+		"dev:json-schema-to-ts": "npm run dev -w json-schema-to-ts",
 		"build": "tsc --build",
 		"test": "vitest run",
 		"test:watch": "vitest --watch"
@@ -23,6 +24,9 @@
 	"author": "",
 	"license": "ISC",
 	"type": "commonjs",
+	"workspaces": [
+		"modules/*"
+	],
 	"bugs": {
 		"url": "https://github.com/Nunes-ND/fastify-type-provider-playground/issues"
 	},

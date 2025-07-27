@@ -12,11 +12,11 @@ O objetivo principal é fornecer um ambiente de aprendizado estruturado para ent
 
 ### 📦 Pacotes do Playground
 
-| #   | 💎   | Exemplo                                    | Status     |
-| --- | --- | ------------------------------------------ | ---------- |
-| 1   | 💎   | `@fastify/type-provider-json-schema-to-ts` | `Em breve` |
-| 2   | 💎   | `@fastify/type-provider-zod`               | `Em breve` |
-| 3   | 💎   | `@fastify/type-provider-typebox`           | `Em breve` |
+| #   | 💎   | Exemplo                                    | Status       |
+| --- | --- | ------------------------------------------ | ------------ |
+| 1   | 💎   | `@fastify/type-provider-json-schema-to-ts` | `Disponível` |
+| 2   | 💎   | `@fastify/type-provider-zod`               | `Em breve`   |
+| 3   | 💎   | `@fastify/type-provider-typebox`           | `Em breve`   |
 
 ### ⚡ Como Executar um Exemplo
 
