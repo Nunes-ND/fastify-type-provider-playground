@@ -8,6 +8,7 @@
 	},
 	"scripts": {
 		"dev:json-schema-to-ts": "npm run dev -w json-schema-to-ts",
+		"dev:zod": "npm run dev -w zod",
 		"build": "tsc --build",
 		"test": "vitest run",
 		"test:watch": "vitest --watch"

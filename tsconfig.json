@@ -34,6 +34,9 @@
       "path": "modules/json-schema-to-ts"
     },
     {
+      "path": "modules/zod"
+    },
+    {
       "path": "modules/shared"
     }
   ]
