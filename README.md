@@ -15,8 +15,8 @@ O objetivo principal é fornecer um ambiente de aprendizado estruturado para ent
 | #   | 💎   | Exemplo                                    | Status       |
 | --- | --- | ------------------------------------------ | ------------ |
 | 1   | 💎   | `@fastify/type-provider-json-schema-to-ts` | `Disponível` |
-| 2   | 💎   | `@fastify/type-provider-zod`               | `Em breve`   |
-| 3   | 💎   | `@fastify/type-provider-typebox`           | `Em breve`   |
+| 2   | 💎   | `@fastify/type-provider-zod`               | `Disponível`   |
+| 3   | 💎   | `@fastify/type-provider-typebox`           | `Disponível`   |
 
 ### ⚡ Como Executar um Exemplo
 
@@ -33,6 +33,22 @@ O objetivo principal é fornecer um ambiente de aprendizado estruturado para ent
     ```
     
     O servidor para o exemplo escolhido será iniciado em modo de desenvolvimento com recarregamento automático.
+
+### 🧪 Como Rodar os Testes
+
+O projeto utiliza [Vitest](https://vitest.dev/) para os testes de integração. Os testes garantem que a API CRUD funcione como esperado para cada provedor de schema.
+
+Para rodar todos os testes de uma vez, execute o seguinte comando na raiz do projeto:
+
+```bash
+npm test
+```
+
+Você também pode rodar os testes para um módulo específico:
+
+-   **JSON Schema to TS**: `npm run test:json-schema-to-ts`
+-   **Zod**: `npm run test:zod`
+-   **TypeBox**: `npm run test:typebox`
 
 ---
 

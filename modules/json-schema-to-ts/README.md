@@ -35,3 +35,26 @@ Este pacote demonstra uma API CRUD (Create, Read, Update, Delete) completa para 
     # A partir de modules/json-schema-to-ts
     npm run dev
     ```
+
+## ↔️ Endpoints da API
+
+A API segue um padrão RESTful para o recurso de usuários:
+
+| Método   | Rota          | Descrição                  |
+| :------- | :------------ | :------------------------- |
+| `POST`   | `/users`      | Cria um novo usuário.      |
+| `GET`    | `/users`      | Lista todos os usuários.   |
+| `GET`    | `/users/:id`  | Obtém um usuário por ID.   |
+| `PUT`    | `/users/:id`  | Atualiza um usuário por ID.|
+| `DELETE` | `/users/:id`  | Deleta um usuário por ID.  |
+
+### Exemplo de Requisição
+
+Para criar um usuário, envie uma requisição `POST` para `/users` com o seguinte corpo:
+
+```json
+{
+  "firstName": "John",
+  "secondName": "Doe"
+}
+```
