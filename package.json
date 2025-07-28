@@ -9,12 +9,15 @@
 	"scripts": {
 		"dev:json-schema-to-ts": "npm run dev -w json-schema-to-ts",
 		"dev:zod": "npm run dev -w zod",
+		"dev:typebox": "npm run dev -w typebox",
 		"build": "tsc --build",
-		"test": "npm run test:json-schema-to-ts && npm run test:zod",
+		"test": "npm run test:json-schema-to-ts && npm run test:zod && npm run test:typebox",
 		"test:json-schema-to-ts": "SERVER_MODULE='json-schema-to-ts/src/http/server' vitest run",
 		"test:watch:json-schema-to-ts": "SERVER_MODULE='json-schema-to-ts/src/http/server' vitest",
 		"test:zod": "SERVER_MODULE='zod/src/http/server' vitest run",
-		"test:watch:zod": "SERVER_MODULE='zod/src/http/server' vitest"
+		"test:watch:zod": "SERVER_MODULE='zod/src/http/server' vitest",
+		"test:typebox": "SERVER_MODULE='typebox/src/http/server' vitest run",
+		"test:watch:typebox": "SERVER_MODULE='typebox/src/http/server' vitest"
 	},
 	"repository": {
 		"type": "git",

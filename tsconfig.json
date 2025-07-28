@@ -37,6 +37,9 @@
       "path": "modules/zod"
     },
     {
+      "path": "modules/typebox"
+    },
+    {
       "path": "modules/shared"
     }
   ]
